@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="level-box">
+      <h1>Choose difficulty level</h1>
+      <form action="">
+        <input type="radio" name="level" id="one" value="one" />
+        <label for="one">One (Range: 0-100)</label> <br />
+        <input type="radio" name="level" id="two" value="two" />
+        <label for="two">Two (Range: 0-150)</label> <br />
+        <input type="radio" name="level" id="three" value="three" />
+        <label for="three">Three (Range: 0-200)</label> <br />
+        <input type="button" value="Submit" onclick="setLevel()" />
+      </form>
+    </div>
+    <br />
+
+    <div id="input-box">
+      <h1 id="diff-h1"></h1>
+      <form action="">
+        <label for="">Enter your number</label><br />
+        <input type="text" placeholder="enter input" id="num" /><br />
+        <input type="button" value="Submit" onclick="checkInput()" />
+      </form>
+    </div>
+
+    <div id="steps">
+      <h1 id="high">Too High!!</h1>
+      <h1 id="low">Too Low!!</h1>
+    </div>
+
+    <div id="final-output">
+      <h1>success!!</h1>
+      <p id="total-count"></p>
+      <button onclick="window.location.reload()">Play again?</button>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>

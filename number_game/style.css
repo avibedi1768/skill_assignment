@@ -1,0 +1,145 @@
+/* all the required ones */
+#input-box {
+  display: none;
+}
+
+#steps #high {
+  display: none;
+}
+#steps #low {
+  display: none;
+}
+
+#final-output {
+  display: none;
+}
+
+/* General */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+h1,
+h2,
+p {
+  margin: 20px 0;
+}
+
+form {
+  margin: 20px auto;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+input[type="button"],
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ff7f50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover,
+button:hover {
+  background-color: #ff5722;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+/* level box */
+#level-box {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* input box */
+#input-box {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#diff-h1 {
+  font-size: 1.5rem;
+  color: #ffecb3;
+}
+
+/* Steps Feedback Styling */
+#steps h1 {
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+#steps #high {
+  color: #ff5252;
+}
+
+#steps #low {
+  color: #42a5f5;
+}
+
+/* final output */
+#final-output {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#final-output h1 {
+  font-size: 2rem;
+  color: #4caf50;
+}
+
+#final-output p {
+  font-size: 1.2rem;
+}
+
+#final-output button {
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 90%;
+  }
+
+  input[type="button"],
+  button {
+    font-size: 0.9rem;
+  }
+}

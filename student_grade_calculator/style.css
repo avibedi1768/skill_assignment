@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #84fab0, #8fd3f4);
+  color: #333;
+  text-align: center;
+}
+
+h1,
+p,
+label {
+  margin: 10px 0;
+}
+
+form {
+  margin: 20px auto;
+}
+
+#inputs {
+  display: none;
+}
+#outputs {
+  display: none;
+}
+
+/* Input Section */
+#inp-num,
+#inputs {
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+#inp-num input,
+#inputs input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#inp-num input[type="button"],
+#inputs input[type="button"] {
+  width: 50%;
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#inp-num input[type="button"]:hover,
+#inputs input[type="button"]:hover {
+  background: #45a049;
+}
+
+/* Outputs Section */
+#outputs {
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+#outputs p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#outputs p:nth-child(4),
+#outputs p:nth-child(5) {
+  color: red;
+  font-weight: bold;
+}
+
+#outputs p:nth-child(5) {
+  color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  #inp-num,
+  #inputs,
+  #outputs {
+    max-width: 90%;
+  }
+
+  #inp-num input,
+  #inputs input {
+    width: 100%;
+  }
+
+  #inp-num input[type="button"],
+  #inputs input[type="button"] {
+    width: 100%;
+  }
+}
